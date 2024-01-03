@@ -1,0 +1,11 @@
+# Download Docker Compose binary from GitHub
+sudo curl -L "https://github.com/docker/compose/releases/download/2.23.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# "https://github.com/docker/compose/releases/download/2.23.3/docker-compose-$(uname -s)-$(uname -m)": This is the URL of the Docker Compose binary you are downloading. The $(uname -s) and $(uname -m) are command substitutions that get replaced with the system's name and machine architecture, respectively.
+-o /usr/local/bin/docker-compose: Save the downloaded file to /usr/local/bin/ with the name docker-compose.
+
+# Give execute permissions to the downloaded Docker Compose binary
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Display Docker Compose version
+docker compose --version
