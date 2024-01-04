@@ -1,3 +1,5 @@
+#########################################################
+
 # Update the system
 sudo yum update -y
 
@@ -6,6 +8,8 @@ sudo yum install -y yum-utils
 
 # Add the official Docker repository to the system's package manager configurations.
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+###########################################################
 
 # Install Docker packages, including the core components (docker-ce, docker-ce-cli, containerd.io) and additional tools (docker-buildx-plugin, docker-compose-plugin).
 sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
