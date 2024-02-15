@@ -68,7 +68,7 @@ Before installing Docker, ensure that your system meets the following requiremen
 - Internet Connection: Ensure that your system has access to the internet to download Docker packages and dependencies.
 - Administrative Privileges: You may need administrative privileges to install Docker on some platforms.
 
-## Istallation
+## Installation
 
 1. Clone this repository: 
 
